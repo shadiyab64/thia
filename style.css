@@ -408,13 +408,66 @@ body {
   position: absolute;
   bottom: 20px;
   left: 200px;
-  width: 180px;        /* adjust size if needed */
-  z-index: 2;          /* above background, below card */
+  width: 180px; 
+  z-index: 2;         
   pointer-events: none;
   opacity: 0.9;
 }
 
 .nudge-section {
   position: relative;   /* required so snake stays inside */
+}
+
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.nudge-card,
+.food-game,
+.poem-card {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+button {
+  width: 100%;
+  max-width: 260px;
+}
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 22px;
+  }
+
+  p, button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  #snake-video {
+    width: 120px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+.lm-nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.nudge-section,
+.food-section,
+.poem-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 
