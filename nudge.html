@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Comic+Neue&display=swap" rel="stylesheet">
+
+  <title>Nudge</title>
+
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <audio id="bgm" src="Muñekita.mp3" loop></audio>
+
+  <header class="lm-header">
+    <div class="lm-nav-wrapper">
+      <nav class="lm-nav">
+        <button onclick="window.location.href='hungry.html'">HUNGRY</button>
+        <button onclick="window.location.href='nudge.html'">NUDGE ME</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="nudge-section">
+
+    <!-- SNAKE VIDEO -->
+  <video id="snake-video" src="snake.webm" autoplay loop muted playsinline></video>
+  
+    <div class="nudge-card">
+      <h2 class="nudge-title">Need a little nudge?</h2>
+
+      <button class="nudge-btn" id="note-btn">Tap for a Note</button>
+      <p id="note-text" class="nudge-text"></p>
+
+      <button class="nudge-btn" id="nudge-btn">Nudge</button>
+      <p id="nudge-msg" class="nudge-text"></p>
+    </div>
+  </section>
+
+    <video id="game-video" src="snake.webm" autoplay loop muted playsinline></video>
+
+  <script src="nudge.js"></script>
+</body>
+</html>

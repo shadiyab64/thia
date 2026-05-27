@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Comic+Neue&display=swap" rel="stylesheet">
+
+  <title>Alaythia</title>
+
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <audio id="bgm" src="Muñekita.mp3" loop></audio>
+
+  <header class="lm-header">
+    <div class="lm-nav-wrapper">
+      <nav class="lm-nav">
+        <button onclick="window.location.href='hungry.html'">HUNGRY</button>
+        <button onclick="window.location.href='nudge.html'">NUDGE ME</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section id="intro-screen">
+    <img id="envelope-img" src="envelope.png" alt="Envelope">
+
+    <div id="letter-box">
+      <p>
+        Hi twinnnnn.<br><br>
+        I made this website to help you decide what to eat if you feel hungry and indecisive.<br><br>
+        Don’t worry, no pressure — it’ll decide for you if you can’t.<br><br>
+        Hope it helps, and enjoy your meal.<br><br>
+        If you think I don’t miss you, I do.<br><br>
+        See you soon, and I hope I'm being a great friend.
+      </p>
+
+      <button id="continue-btn">Continue</button>
+    </div>
+  </section>
+
+  <!-- GAME -->
+  <section class="food-game" style="display:none;">
+
+    <video id="game-video" src="snake.webm" autoplay loop muted playsinline></video>
+    <div id="game-box">
+      <h2 id="game-title">What meal are we deciding?</h2>
+      <div id="options"></div>
+      <div id="timer">60</div>
+    </div>
+  </section>
+
+  <script src="hungry.js"></script>
+</body>
+</html>
