@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Let's Choose</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<audio id="bgm" src="Muñekita.mp3" loop></audio>
+
+
+<header class="lm-header">
+  <div class="lm-logo" onclick="window.location.href='index.html'">Maestra</div>
+
+  <nav class="lm-nav">
+    <button onclick="window.location.href='poem.html'">Poem</button>
+    <button onclick="window.location.href='game.html'">Let's Choose</button>
+  </nav>
+</header>
+
+<section class="gamepage">
+  <div class="game-layout">
+
+    <!-- LEFT SIDE: IMAGE -->
+    <div class="portrait-wrapper">
+      <img src="thia.png" alt="Alaythia">
+    </div>
+
+    <!-- RIGHT SIDE: GLASS GAME CARD -->
+    <div class="mamacita game-card">
+      <h3 class="game-title">Let's Choose</h3>
+      <div class="category-buttons">
+        <button onclick="startGame('restaurant')">Restaurant</button>
+        <button onclick="startGame('fun')">Fun</button>
+        <button onclick="startGame('chill')">Chill</button>
+        <button onclick="startGame('gift')">Gift</button>
+      </div>
+
+      <div id="randomizer" class="randomizer">
+        <p>Tap a category to start</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="game.js"></script>
+
+</body>
+</html>
