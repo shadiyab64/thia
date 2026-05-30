@@ -15,7 +15,7 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 
   background:
     url('instagramModel.png') top center / cover no-repeat;
