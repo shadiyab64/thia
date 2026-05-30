@@ -174,8 +174,7 @@ body {
 /* NAV — buttons spaced inside the wrapper */
 .lm-nav {
   display: flex;
-  flex-direction: row; 
-  gap: 32px;
+  gap: 32px; 
 }
 
 /* BUTTONS */
@@ -185,6 +184,7 @@ body {
   font-family: "Playfair Display", serif;
   border: none;
   color: #FFB3BA;
+  flex-direction: row;
   font-size: 15px;
   letter-spacing: 0.5px;
   cursor: pointer;
